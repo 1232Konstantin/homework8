@@ -24,7 +24,7 @@ set_target_properties(bayan  PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
- message(STATUS " ${Boost_INCLUDE_DIR}")
+ message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
 
 #for GITHUB
 set_target_properties(bayan  PROPERTIES
