@@ -17,6 +17,7 @@ project(bayan VERSION ${PROJECT_VESRION})
 find_package(Boost COMPONENTS filesystem program_options nowide REQUIRED)
 message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
 find_path(BOOST_CRC_INCLUDE_DIRS boost/crc.hpp)
+message(STATUS "BBBBB ${BOOST_CRC_INCLUDE_DIRS}")
 
 add_executable(bayan main.cpp)
 
