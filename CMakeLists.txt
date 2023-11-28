@@ -16,8 +16,7 @@ project(bayan VERSION ${PROJECT_VESRION})
 
 find_package(Boost COMPONENTS filesystem program_options nowide REQUIRED)
 message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
-find_path(BOOST_CRC_INCLUDE_DIRS crc.hpp)
-message(STATUS "BBBBB ${BOOST_CRC_INCLUDE_DIRS}")
+
 
 add_executable(bayan main.cpp)
 
@@ -44,8 +43,6 @@ set_target_properties(bayan  PROPERTIES
 target_link_libraries(bayan
     ${Boost_LIBRARIES}
 )
-
-target_include_directories(bayan PUBLIC ${BOOST_CRC_INCLUDE_DIRS})
 
 install(TARGETS bayan RUNTIME DESTINATION bin)
 
