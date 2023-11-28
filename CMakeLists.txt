@@ -16,6 +16,8 @@ project(bayan VERSION ${PROJECT_VESRION})
 
 find_package(Boost COMPONENTS filesystem program_options nowide REQUIRED)
 
+ message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
+
 add_executable(bayan main.cpp)
 
 
@@ -24,7 +26,7 @@ set_target_properties(bayan  PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
- message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
+
 
 #for GITHUB
 set_target_properties(bayan  PROPERTIES
