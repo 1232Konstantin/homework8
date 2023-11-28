@@ -42,8 +42,6 @@ target_link_libraries(bayan
 
 
 
-
-
 install(TARGETS bayan RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
