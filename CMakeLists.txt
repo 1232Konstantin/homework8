@@ -15,8 +15,8 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 project(bayan VERSION ${PROJECT_VESRION})
 
 find_package(Boost COMPONENTS filesystem program_options nowide REQUIRED)
-
- message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
+message(STATUS "AAAAA ${Boost_INCLUDE_DIR}")
+include_directories(${Boost_INCLUDE_DIRS})
 
 add_executable(bayan main.cpp)
 
