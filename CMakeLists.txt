@@ -24,6 +24,8 @@ set_target_properties(bayan  PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
+ message(STATUS " ${Boost_INCLUDE_DIR}")
+
 #for GITHUB
 set_target_properties(bayan  PROPERTIES
     COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
