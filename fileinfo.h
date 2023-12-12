@@ -5,11 +5,11 @@
 #include <iostream>
 #include <locale>
 #include <vector>
-#include <boost\crc.hpp>
-#include <boost\filesystem.hpp>
-#include <boost\algorithm\string.hpp>
-#include <boost\algorithm\hex.hpp>
-#include <boost\uuid\detail\md5.hpp>
+#include <boost/crc.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/hex.hpp>
+#include <boost/uuid/detail/md5.hpp>
 #include <set>
 
 #include <boost/nowide/args.hpp>
